@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="hw1.css" />
+        <script src="hw1.js"></script>
+    </head>
+    <body>
+        <div>
+            <span><input id="drawLine" value="Draw Line" class="submit" type="button" /></span>
+            <span><input id="drawCircle" value="Draw Circle" class="submit" type="button" /></span>
+            <span><input id="drawEllipse" value="Draw Ellipse (incomplete)" class="submit" type="button" /></span>
+            <span><input id="drawRectangle" value="Draw Rectangle" class="submit" type="button" /></span>
+            <span><input id="drawPolygon" value="Draw Polygon" class="submit" type="button" /></span>
+            <span><input id="drawPolyline" value="Draw Polyline" class="submit" type="button" /></span>
+            <span><input id="erase" value="Clear Canvas" class="submit" type="button"/></span>
+        </div>
+        <div id="DrawCircle" style="display: none">
+            <div id="1" class="point-entry">
+                <span>X: </span><input id="pointCirc1-x" class="enter" type="number" />
+                <span>Y: </span><input id="pointCirc1-y" class="enter" type="number" />
+            </div>
+            <div id="2" class="point-entry">
+                <span>X: </span><input id="pointCirc2-x" class="enter" type="number" />
+                <span>Y: </span><input id="pointCirc2-y" class="enter" type="number" />
+            </div>
+            <input id="draw-line" class="submit" type="button" onClick="drawCircle()" value="Draw Circle" />
+        </div>
+        <div id="DrawEllipse" style="display: none">
+            <div id="1" class="point-entry">
+                <span>X: </span><input id="pointEllip1-x" class="enter" type="number" />
+                <span>Y: </span><input id="pointEllip1-y" class="enter" type="number" />
+            </div>
+            <div id="2" class="point-entry">
+                <span>X: </span><input id="pointEllip2-x" class="enter" type="number" />
+                <span>Y: </span><input id="pointEllip2-y" class="enter" type="number" />
+            </div>
+            <input id="draw-ellipse" class="submit" type="button" onClick="drawEllipse()" value="Draw Ellipse" />
+        </div>
+        <div id="DrawRectangle" style="display: none">
+            <div id="1" class="point-entry">
+                <span>X: </span><input id="pointRect1-x" class="enter" type="number" />
+                <span>Y: </span><input id="pointRect1-y" class="enter" type="number" />
+            </div>
+            <div id="2" class="point-entry">
+                <span>X: </span><input id="pointRect2-x" class="enter" type="number" />
+                <span>Y: </span><input id="pointRect2-y" class="enter" type="number" />
+            </div>
+            <input id="draw-line" class="submit" type="button" onClick="drawRectangle()" value="Draw Rectangle" />
+        </div>
+        <div id="DrawPolyLine" style="display: none">
+            <div id="1" class="point-entry">
+                <span>X: </span><input id="pointPLine1-x" class="enter" type="number" />
+                <span>Y: </span><input id="pointPLine1-y" class="enter" type="number" />
+            </div>
+            <input id="drawPLine" class="submit" type="button" value="Add Point in Polyline" />
+        </div>
+        <div id="DrawPolygon" style="display: none">
+            <div id="1" class="point-entry">
+                <span>X: </span><input id="pointPGon1-x" class="enter" type="number" />
+                <span>Y: </span><input id="pointPGon1-y" class="enter" type="number" />
+            </div>
+            <input id="drawPGon" class="submit" type="button" value="Add Point in Polygon" />
+        </div>
+        <canvas id="main" class="line-draw" width="600px" height="600px"></canvas>
+    </body>
+</html> 

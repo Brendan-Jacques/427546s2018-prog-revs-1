@@ -1,0 +1,12 @@
+//Okay, notes: The goal is to make an equation that finds each point that needs to be rendered in order, then finds whether the midpoint of the horizontal or diagonal pixel is closer. atm, your program doesn't make a distinction between the mathematical points of the line and the pixels that line will be made from. Fix.
+        
+        //Well, if we assume that the result of Ax + By + C cannot be negative (which it cannot), then just see which result is closer to zero and use that one.
+        
+        //Current issue, angles larger than 45% where 0% is straight down and 45% is down-right can't be done yet because y has no
+        //means of iterating without also iterating x.
+        //Okay, so what this means in terms of Ax + By + C = 0 is that By must be <= Ax or the equation fails.
+        //How do I go about flipping this equation so that it can perform in the opposite direction?
+        
+        // --> Could I have the program determine the direction to follow based on the slope of the line? As in, calculate the values of (y2 - y1) and (x2 - x1) and based on whether they were positive or negative, go to different midpoint calculators. Then add a third lineEqu var that finds the lineEqu which adds x but subtracts y. That way the midpoint calc we have right now can function with its opposite. Then make matching versions for the other 4 midpoint equations.
+        
+        //Okay, now that you have quadrant 1 functioning properly, next step is to modify the program so that it can create lines in the other 4 quadrants. What if I set up a function that find the change in x and change in y, and based on the results, decides whether to add 1 to newX/newY or subtract 1 from newX/newY?

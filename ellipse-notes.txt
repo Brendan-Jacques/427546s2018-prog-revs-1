@@ -1,0 +1,3 @@
+Current problem: The project is having trouble distinguishing from the different
+event handlers. You need to implement a fix that removes the current event
+listener and adds the proper one every time the user swaps draw functions.

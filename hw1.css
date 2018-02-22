@@ -1,0 +1,15 @@
+canvas.line-draw{
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+}
+
+input.loc {
+    width: 200px;
+    font-size: 20px;
+}
+
+input.submit {
+    height: 50px;
+    margin-bottom: 30px;
+}
